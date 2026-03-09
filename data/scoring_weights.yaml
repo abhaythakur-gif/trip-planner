@@ -1,0 +1,52 @@
+# Scoring Weights Configuration
+
+# Default scoring weights for transport options
+transport_scoring:
+  cost_weight: 0.40
+  duration_weight: 0.25
+  flexibility_weight: 0.20
+  comfort_weight: 0.15
+
+# Default scoring weights for accommodation
+stay_scoring:
+  price_weight: 0.35
+  rating_weight: 0.25
+  location_weight: 0.25
+  cancellation_weight: 0.15
+
+# Budget allocation defaults (percentages)
+budget_defaults:
+  budget_travel:
+    transport: 0.35
+    stay: 0.30
+    food: 0.20
+    activities: 0.10
+    buffer: 0.05
+  
+  moderate_travel:
+    transport: 0.32
+    stay: 0.35
+    food: 0.18
+    activities: 0.10
+    buffer: 0.05
+  
+  luxury_travel:
+    transport: 0.30
+    stay: 0.40
+    food: 0.15
+    activities: 0.10
+    buffer: 0.05
+
+# Confidence score weights
+confidence_weights:
+  budget_score: 0.30
+  completeness_score: 0.25
+  risk_score: 0.25
+  violation_score: 0.20
+
+# Risk assessment weights
+risk_weights:
+  weather_risk: 0.30
+  transport_risk: 0.25
+  budget_risk: 0.25
+  destination_safety: 0.20
